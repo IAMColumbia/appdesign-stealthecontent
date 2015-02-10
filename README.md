@@ -11,3 +11,4 @@
 ## Stage Two
 
 1. Choose another classmates repository.  You can browse their GitHub pages from [our class organization page](https://github.com/orgs/IAMColumbia/teams/applicationdesign2015sp)
+2. Pull in their changes into a new branch 
