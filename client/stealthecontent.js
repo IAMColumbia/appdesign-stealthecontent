@@ -1,60 +1,41 @@
 Template.main.helpers({
     data: {
-        search: "boring",
-        dictionary: {
-            syllables: ["bor", "ing"],
-            phonetic: "/ËˆbÃ´riNG/",
-            partOfSpeech: "adjective",
-            definition: "not interesting; tedious.",
-            context: "I've got a boring job in an office",
-            synonyms: ["tedious", "dull", "monotonous", "repetitive"],
-        },
-        resultCount: 199000000,
-        searchTime: 0.29,
+        search: "accessories",
+      
+        
+        resultCount: 5190,
         results: [
             {
                 type: "website",
-                title: "Boring Synonyms, Boring Antonyms | Thesaurus.com",
-                url: "http://www.thesaurus.com/browse/boring",
-                excerpt: "Synonyms for boring at Thesaurus.com with free online thesaurus, antonyms, and definitions. Dictionary and Word of the Day." 
+		imageUrl: "http://cdn.us.playstation.com/pscomauth/groups/public/documents/webasset/accessories-nhasset.png",
+		title: "Playstation®3 Accessories - PS3™ Accessories, PS3™ ...",
+                url: "http://us.playstation.com/ps3/accessories/",
+                excerpt: "... PlayStation ® 3 Accessories. Having the right tools can make all the difference. Get the accessories you need for your best gaming..." 
             },
             {
                 type: "website",
-                title: "Boring | Define Boring at Dictionary.com",
-                url: "http://dictionary.reference.com/browse/boring",
-                excerpt: "Dennis's life is boring until Vogue magazine introduces him to fashion. It gets a little boring being in a hospital all day. It sounds exciting, but the funny thing about paleontology is that it's very boring. And as they walked or rode, and looked at them, they could talk without too much boring each other."
+                title: "Accessories...",
+                url: "http://www.playstation.com/en-us/explore/ps3/accessories/",
+                excerpt: "... PS3™ Accessories. Tweet. DUALSHOCK®3. The DUALSHOCK ® 3 wireless controller for the PlayStation ® 3 system provides"
             },
             {
-                type: "location",
-                title: "The Wicker Park Secret Agent Supply Co.",
-                url: "http://www.826chi.org/",
-                rating: 4.4,
-                reviews: 9,
-                address: "1276 North Milwaukee Avenue, Chicago, IL 60622",
-                phone: "(773) 772-8108"
-            },
-            {
-                type: "images",
-                imageUrls: [
-                    "http://positiveresultsmarketing.com/wp-content/uploads/2014/01/Lost-interest.jpg",
-                    "http://blog.hittail.com/wp-content/uploads/2014/05/3410197-boring.jpg",
-                    "http://i.huffpost.com/gen/352503/thumbs/r-SCHOOL-BORING-large570.jpg",
-                    "http://yourschoolmarketing.com/wp-content/uploads/2011/12/bored-baby.jpg",
-                    "http://cdn2.hubspot.net/hub/53/file-23115846-jpg/blog/images/boring-marketing-content.jpg?t=1423367392232"
-                ]
+                type: "website",
+                title: "PlayStation®Portable Accessories - PSP®go...",
+                url: "http://us.playstation.com/psp/accessories/",
+                excerpt:"... PSP Accessories. More memory, better experience. Take the PSP ® system everywhere you go. PSP®-3000 Accessories Extended Life Battery...."
             }
+           
         ],
-        relatedSearches: [
-            "meaning",
-            "things",
-            "synonym",
-            "crossword clue",
-            "games",
-            "antonym",
-            "quotes",
-            "bees"
+        SuggestedLinks: [
+            "http://us.playstation.com/ps4",
+            "http://us.playstation.com/ps3/systems",
+            "http://us.playstation.com/mytrophies",
+            "http://us.playstation.com/ps3/accessories",
+            "http://us.playstation.com/psn/psncards",
+            "http://us.playstation.com/psn/top-10-sellers",
+            "http://us.playstation.com/ps3/games-and-media/index.htm"
         ],
-        pages: 10,
+        pages: 9,
         currentPage: 1
     }
 });
