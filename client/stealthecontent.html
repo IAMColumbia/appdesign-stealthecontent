@@ -7,5 +7,17 @@
 </body>
 
 <template name="main">
-  {{data}}
+	  {{#with data}}
+	<h1>{{page}}</h1>
+	
+	{{#each post}}
+	
+	<h2>
+	{{votes}}
+	<a href="{{url}}">{{title}}</a>
+	</h2>
+	{{author}}
+	{{/each}}
+	  
+	  {{/with}}
 </template>

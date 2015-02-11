@@ -1,6 +1,6 @@
 Template.main.helpers({
     data: {
-        page: "r/prgroamming",
+        page: "r/programming",
         post: [
             {
                 title: "One-Bit To Rule Them All: Bypassing Windows’ 10 Protections using a Single Bit",
