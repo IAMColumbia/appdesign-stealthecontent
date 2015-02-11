@@ -7,5 +7,20 @@
 </body>
 
 <template name="main">
-  {{data}}
+<ul>
+  {{#each results}}
+  	<li>ID: {{id}}</li>
+  	<li>Name: {{name}}</li>
+  	<li>Full Name: {{full_name}}</li>
+  	<ul>
+  		{{#with owner}}
+  			<li>Login: {{login}}</li>
+  			<li>ID: {{id}}</li>
+  			<li>Avatar URL: {{avatar_url}}</li>
+  		{{/with}}
+  	</ul>
+  	<br/>
+  	<br/>
+  {{/each}}
+  </ul>
 </template>
