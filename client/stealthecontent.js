@@ -1,60 +1,50 @@
 Template.main.helpers({
     data: {
-        search: "boring",
-        dictionary: {
-            syllables: ["bor", "ing"],
-            phonetic: "/ˈbôriNG/",
-            partOfSpeech: "adjective",
-            definition: "not interesting; tedious.",
-            context: "I've got a boring job in an office",
-            synonyms: ["tedious", "dull", "monotonous", "repetitive"],
-        },
-        resultCount: 199000000,
-        searchTime: 0.29,
-        results: [
-            {
-                type: "website",
-                title: "Boring Synonyms, Boring Antonyms | Thesaurus.com",
-                url: "http://www.thesaurus.com/browse/boring",
-                excerpt: "Synonyms for boring at Thesaurus.com with free online thesaurus, antonyms, and definitions. Dictionary and Word of the Day." 
-            },
-            {
-                type: "website",
-                title: "Boring | Define Boring at Dictionary.com",
-                url: "http://dictionary.reference.com/browse/boring",
-                excerpt: "Dennis's life is boring until Vogue magazine introduces him to fashion. It gets a little boring being in a hospital all day. It sounds exciting, but the funny thing about paleontology is that it's very boring. And as they walked or rode, and looked at them, they could talk without too much boring each other."
-            },
-            {
-                type: "location",
-                title: "The Wicker Park Secret Agent Supply Co.",
-                url: "http://www.826chi.org/",
-                rating: 4.4,
-                reviews: 9,
-                address: "1276 North Milwaukee Avenue, Chicago, IL 60622",
-                phone: "(773) 772-8108"
-            },
-            {
-                type: "images",
-                imageUrls: [
-                    "http://positiveresultsmarketing.com/wp-content/uploads/2014/01/Lost-interest.jpg",
-                    "http://blog.hittail.com/wp-content/uploads/2014/05/3410197-boring.jpg",
-                    "http://i.huffpost.com/gen/352503/thumbs/r-SCHOOL-BORING-large570.jpg",
-                    "http://yourschoolmarketing.com/wp-content/uploads/2011/12/bored-baby.jpg",
-                    "http://cdn2.hubspot.net/hub/53/file-23115846-jpg/blog/images/boring-marketing-content.jpg?t=1423367392232"
-                ]
-            }
-        ],
-        relatedSearches: [
-            "meaning",
-            "things",
-            "synonym",
-            "crossword clue",
-            "games",
-            "antonym",
-            "quotes",
-            "bees"
-        ],
-        pages: 10,
-        currentPage: 1
-    }
+     userInfo:{
+		 name: "Jake Mullen",
+		 username: "@jakeMullen1"",
+		 tweetCount: 1041,
+		 followingCount: 170,
+		 followerCount: 163,
+		 profliePicture: "https://pbs.twimg.com/profile_images/3644377202/e2d59daf9d8005564aad943cc0de8911_bigger.jpeg",
+		 backgroundPicture:"https://pbs.twimg.com/profile_images/3644377202/e2d59daf9d8005564aad943cc0de8911_bigger.jpeg",
+	 }
+	 posts:[
+	 {
+		 type: "Text",
+		 name: "Wired",
+		 username: "@WIRED",
+		 postTime: "17m"
+		 postText: "Twitter is buying the talent agency, Niche, for an undisclosed sum http://wrd.cm/1AobEYX ",
+		 numRetweets: 8,
+		 numFavorites: 8,
+		 profilePicture: "https://pbs.twimg.com/profile_images/378800000703426078/f0e0491c473589ad484d976ca45d712b_bigger.png"
+	 },
+	 {
+		 type:"text",
+		 name: "UberFacts",
+		 username: "@UberFacts",
+		 postTime: "30m",
+		 postText: "63% of women expect the guy to pay the bill on the first date, according to a survey",
+		 numRetweets: 179,
+		 rumFavorites: 402,
+		 profilePicture: "https://pbs.twimg.com/profile_images/511985610035175426/-816FrRG_bigger.jpeg"
+	 },
+	 {
+		 type:"picture",
+		 name:"Charlie Quote",
+		 username: "CharlieDayQuote",
+		 postTime: "53m",
+		 text: "",
+		 picture: ["https://pbs.twimg.com/media/B9mG5HbIQAEmAVc.png", "https://pbs.twimg.com/media/B9mG5HbIQAEmAVc.png"],
+		 numRetweets: 120,
+		 numFavorites: 137
+	 }
+	]
+	 trends:{
+		 thingsTrending:["#WhatIsLoveIn4Words","House of Cards", "Valentines Day", "#ChapelHillShooting", "Jerry Tarkanian", "Willian", "#MUFC", "GBBOComicRelief", "Jackie Robinson West", "Jon Stewart"]
+		 
+	 }
+	 
+	}
 });
