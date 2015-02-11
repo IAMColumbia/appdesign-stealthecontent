@@ -1,60 +1,44 @@
 Template.main.helpers({
     data: {
-        search: "boring",
-        dictionary: {
-            syllables: ["bor", "ing"],
-            phonetic: "/ˈbôriNG/",
-            partOfSpeech: "adjective",
-            definition: "not interesting; tedious.",
-            context: "I've got a boring job in an office",
-            synonyms: ["tedious", "dull", "monotonous", "repetitive"],
-        },
-        resultCount: 199000000,
-        searchTime: 0.29,
-        results: [
-            {
-                type: "website",
-                title: "Boring Synonyms, Boring Antonyms | Thesaurus.com",
-                url: "http://www.thesaurus.com/browse/boring",
-                excerpt: "Synonyms for boring at Thesaurus.com with free online thesaurus, antonyms, and definitions. Dictionary and Word of the Day." 
-            },
-            {
-                type: "website",
-                title: "Boring | Define Boring at Dictionary.com",
-                url: "http://dictionary.reference.com/browse/boring",
-                excerpt: "Dennis's life is boring until Vogue magazine introduces him to fashion. It gets a little boring being in a hospital all day. It sounds exciting, but the funny thing about paleontology is that it's very boring. And as they walked or rode, and looked at them, they could talk without too much boring each other."
-            },
-            {
-                type: "location",
-                title: "The Wicker Park Secret Agent Supply Co.",
-                url: "http://www.826chi.org/",
-                rating: 4.4,
-                reviews: 9,
-                address: "1276 North Milwaukee Avenue, Chicago, IL 60622",
-                phone: "(773) 772-8108"
-            },
-            {
-                type: "images",
-                imageUrls: [
-                    "http://positiveresultsmarketing.com/wp-content/uploads/2014/01/Lost-interest.jpg",
-                    "http://blog.hittail.com/wp-content/uploads/2014/05/3410197-boring.jpg",
-                    "http://i.huffpost.com/gen/352503/thumbs/r-SCHOOL-BORING-large570.jpg",
-                    "http://yourschoolmarketing.com/wp-content/uploads/2011/12/bored-baby.jpg",
-                    "http://cdn2.hubspot.net/hub/53/file-23115846-jpg/blog/images/boring-marketing-content.jpg?t=1423367392232"
-                ]
+        video: "url...", // couldn'T be found easily using inspect element
+        headline: {
+            description: "'American Sniper' murder trial begins",
+            link: "http://www.cnn.com/videos/us/2015/02/11/newday-dnt-lavandera-eddie-ray-routh-trial-chris-kyle.cnn"
+        }
+        slider: {
+            headline: ["'American Sniper' murder trial begins", 
+                       "Muslim students killed in Chapel Hill shooting", 
+                       "Obama predicts same-sex marriage victory",
+                        "'The world grieves with us'", 
+                        "U.S., UK pull embassy staffers out of Yemen", 
+                        "ISIS giving terror recruits new instructions" ],
+            image: ["http://i2.cdn.turner.com/cnnnext/dam/assets/150211082706-newday-dnt-lavandera-eddie-ray-routh-trial-chris-kyle-00013612-large-169.jpg",
+                    "http://i2.cdn.turner.com/cnnnext/dam/assets/150211051557-chapel-hill-triple-murder-large-169.jpg",
+                    "http://i2.cdn.turner.com/cnnnext/dam/assets/150211074813-obama-buzzfeed-same-sex-marriage-large-169.png",
+                    "http://i2.cdn.turner.com/cnnnext/dam/assets/150206171146-03-kayla-muller-0206-large-169.jpg",
+                    "http://i2.cdn.turner.com/cnnnext/dam/assets/150206131757-01-yemen-unrest-0206-large-169.jpg",
+                    "http://i2.cdn.turner.com/cnnnext/dam/assets/150210173802-isis-manual-lead-pkg-02-10-large-169.jpg"]
+        }
+        popularStories: {
+            headline: {
+                link: ["http://www.cnn.com/videos/entertainment/2015/02/11/orig-jon-stewart-leaving-daily-show.comedy-central/video/playlists/most-popular-domestic/",
+                       "http://www.cnn.com/videos/world/2015/02/10/lead-bts-kayla-mueller-family-and-friends-press-conference.cnn/video/playlists/most-popular-domestic/",
+                       "http://www.cnn.com/videos/us/2015/02/10/newday-australia-car-chase.cnn/video/playlists/most-popular-domestic/",
+                       "http://www.cnn.com/videos/entertainment/2015/02/10/ac-dnt-kaye-nick-gordon-profile.cnn/video/playlists/most-popular-domestic/"],
+                description: ["See Stewart announce departure from 'The Daily Show'", 
+                              "Childhood friend: Kayla Mueller 'was joy'", 
+                              "High-speed car chase has dramatic ending",
+                              "Who is Nick Gordon?"]
             }
-        ],
-        relatedSearches: [
-            "meaning",
-            "things",
-            "synonym",
-            "crossword clue",
-            "games",
-            "antonym",
-            "quotes",
-            "bees"
-        ],
-        pages: 10,
-        currentPage: 1
+            image: ["http://i2.cdn.turner.com/cnnnext/dam/assets/150211004149-orig-jon-stewart-leaving-daily-show-00020622-medium-169.jpg", 
+                    "http://i2.cdn.turner.com/cnnnext/dam/assets/150206133834-01-kayla-mueller-0206-medium-169.jpg",
+                    "http://i2.cdn.turner.com/cnnnext/dam/assets/150210072940-newday-australia-car-chase-medium-169.png",
+                    "http://i2.cdn.turner.com/cnnnext/dam/assets/150210210718-ac-dnt-kaye-nick-gordon-profile-00001513-medium-169.jpg"]
+        }
+        weatherInformation: {
+            location: "Ney York",
+            temperature: 32
+        }
+        
     }
 });
