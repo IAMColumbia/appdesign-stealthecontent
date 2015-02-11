@@ -7,5 +7,14 @@
 </body>
 
 <template name="main">
-  {{data}}
+    {{#with data}}
+        <input type='text' value='{{search}}' />
+
+        <ul>
+        {{#each featuredStories}}
+            <li>{{title}} <img src='{{imageUrl}}' /></li>
+
+        {{/each}}
+        </ul>
+    {{/with}}
 </template>
