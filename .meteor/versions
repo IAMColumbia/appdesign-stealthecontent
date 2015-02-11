@@ -5,6 +5,7 @@ binary-heap@1.0.3-winr.2
 blaze@2.0.5-winr.3
 blaze-tools@1.0.3-winr.2
 boilerplate-generator@1.0.3-winr.2
+bootstrap@1.0.1
 callback-hook@1.0.3-winr.2
 check@1.0.4-win.0
 ddp@1.0.14-winr.5
@@ -27,6 +28,7 @@ meteor-platform@1.2.1-winr.3
 minifiers@1.1.4-winr.4
 minimongo@1.0.7-winr.3
 mobile-status-bar@1.0.3-winr.2
+momentjs:moment@2.9.0
 mongo@1.0.12-winr.4
 observe-sequence@1.0.5-winr.2
 ordered-dict@1.0.3-winr.2

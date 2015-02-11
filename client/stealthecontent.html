@@ -7,20 +7,32 @@
 </body>
 
 <template name="main">
-<ul>
+<ul style="list-style-type: none;">
   {{#each results}}
-  	<li>ID: {{id}}</li>
-  	<li>Name: {{name}}</li>
-  	<li>Full Name: {{full_name}}</li>
-  	<ul>
+  	<li><a href="{{html_url}}"> {{full_name}} </a></li>
+  	<li>{{description}}</li>
+  	<li id="{{id}}"> </li>
+  	<li>{{language}}</li>
+  	
+  	<script>
+  		var temp = moment('{{updated_at}}').fromNow();
+		console.log(temp);
+		document.getElementById('{{id}}').innerHTML = temp;
+  	</script>
+  	
+  	<!--<ul>
   		{{#with owner}}
   			<li>Login: {{login}}</li>
   			<li>ID: {{id}}</li>
   			<li>Avatar URL: {{avatar_url}}</li>
   		{{/with}}
-  	</ul>
+  	</ul>-->
+  	
+  	
   	<br/>
   	<br/>
   {{/each}}
+  
+  moment('2014-03-31T00:37:39Z').fromNow();
   </ul>
 </template>
