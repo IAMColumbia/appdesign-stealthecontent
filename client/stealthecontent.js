@@ -1,60 +1,88 @@
 Template.main.helpers({
     data: {
-        search: "boring",
-        dictionary: {
-            syllables: ["bor", "ing"],
-            phonetic: "/ˈbôriNG/",
-            partOfSpeech: "adjective",
-            definition: "not interesting; tedious.",
-            context: "I've got a boring job in an office",
-            synonyms: ["tedious", "dull", "monotonous", "repetitive"],
-        },
-        resultCount: 199000000,
-        searchTime: 0.29,
-        results: [
-            {
-                type: "website",
-                title: "Boring Synonyms, Boring Antonyms | Thesaurus.com",
-                url: "http://www.thesaurus.com/browse/boring",
-                excerpt: "Synonyms for boring at Thesaurus.com with free online thesaurus, antonyms, and definitions. Dictionary and Word of the Day." 
-            },
-            {
-                type: "website",
-                title: "Boring | Define Boring at Dictionary.com",
-                url: "http://dictionary.reference.com/browse/boring",
-                excerpt: "Dennis's life is boring until Vogue magazine introduces him to fashion. It gets a little boring being in a hospital all day. It sounds exciting, but the funny thing about paleontology is that it's very boring. And as they walked or rode, and looked at them, they could talk without too much boring each other."
-            },
-            {
-                type: "location",
-                title: "The Wicker Park Secret Agent Supply Co.",
-                url: "http://www.826chi.org/",
-                rating: 4.4,
-                reviews: 9,
-                address: "1276 North Milwaukee Avenue, Chicago, IL 60622",
-                phone: "(773) 772-8108"
-            },
-            {
-                type: "images",
-                imageUrls: [
-                    "http://positiveresultsmarketing.com/wp-content/uploads/2014/01/Lost-interest.jpg",
-                    "http://blog.hittail.com/wp-content/uploads/2014/05/3410197-boring.jpg",
-                    "http://i.huffpost.com/gen/352503/thumbs/r-SCHOOL-BORING-large570.jpg",
-                    "http://yourschoolmarketing.com/wp-content/uploads/2011/12/bored-baby.jpg",
-                    "http://cdn2.hubspot.net/hub/53/file-23115846-jpg/blog/images/boring-marketing-content.jpg?t=1423367392232"
+        languages: "ENGLISH","FRANÇAIS","РУССКИЙ","SUOMI","SVENSKA","ČEŠTINA","SLOVENČINA","DEUTSCH"
+        games: {
+            date: "today","Thursday 2/12",
+            teams: "Detroit,Pittsburgh", " Vancouver, Chicago"
+            time: "8:00pm", "10:00pm"
+            channel: "NBCSN"
+                }
+        Banner: {"Draft Kings enter now ad"},
+        display:{
+            type: "Image link to movie"
+            rotating: "true"
+            description:"Watch tonight at penguins 8pm"
+        }
+        headline:{
+            title:"Dynamic duo",
+            description: "Red Wings Tatar emerging as rising star"
+        SideBar: {
+            articleList: [
+                {title:"Sabres land E. Kane from jets", Video: true}, 
+                {title: "Fantasy: Impact of deal", Video: true},
+                {title:" D-men ranks", Video: true},
+                {title:"Stars acquire goaltender Enroth from Sabres", video: false},
+                {title:"Nabokov retires", video:false},
+                {title:"Career almost never started", video: false},
+                {title:"Devils' Jagr won't ask for trade", video:false},
+                {title: "Wings-Penguins", video: true}
+            ]
+        }
+        Mediablock: {
+            TopicList: NHL_VideoCenter[
+                {title:"Rinne adds to his super save highlight reel" Video: true}, 
+                {title:"Puck rolls on its side and takes turn into empty net" Video: true},
+                {title:"Dan Boyle converts nifty pass from Derick Brassard" Video: true},
+                {title:"Vasilevskey joins the save of the year conversation" video: true},
+                {title:"Watch Levi Stadium's time lapse transformation" video:true},
+                
+        }
+        HighlightVideos: [
+                {title: "Game Highlights"},
+                {title: "Classic CLips"},
+                {title: "NHL Live"},
+                {title: "Press Room"},
+                {title:"Shootout"},
+                {title:"Week's Best"},
+                {title: "Player Safety"}
+                        ]
+        SocialMedia: tags [
+                {host:"Facebook"},
+                {host:"Twitter"},
+                {host:"youtube"},
+                {host: "instagram"},
+                {host:"pinterest"},
+                {host: "FourSquare"},
+                {host:"Google Plus"},
+                {host: "vine"}
                 ]
+        StarsOfTheWeek:{
+                {name: "mats Zuccaello",
+                Position: "Right Wing",
+                Team: "New York Rangers",
+                Goals: "2",
+                Assists: "0",
+                points:"2",
+                video: true
+                }
+                {name: "Jonathon Huberdeau",
+                Position: "Left Wing",
+                Team: "Florida Panthers",
+                Goals: "0",
+                Assists: "3",
+                points:"3",
+                video: true
+                }
+                {name: "Michael Hutchinson",
+                Position: "Goalie",
+                Team: "Winnipeg Jets",
+                SavePercentage: ".967",
+                Saves: "29",
+                ShotsAgainst: "30",
+                video: true
+                }
             }
-        ],
-        relatedSearches: [
-            "meaning",
-            "things",
-            "synonym",
-            "crossword clue",
-            "games",
-            "antonym",
-            "quotes",
-            "bees"
-        ],
-        pages: 10,
-        currentPage: 1
+        }
+
     }
 });
