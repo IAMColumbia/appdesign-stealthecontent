@@ -1,11 +1,4 @@
-Template.main.helpers({
-    data: {
-        user: "jordmax12",
-        dictionary: {
-            name: "Jordan Max"
-            email: "jordmax12@gmail.com"
-        },
-        results: [
+[
   {
     "id": 25340271,
     "name": "ADO_Azure",
@@ -1921,5 +1914,3 @@ Template.main.helpers({
     "default_branch": "master"
   }
 ]
-    }
-});
