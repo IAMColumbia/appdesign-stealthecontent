@@ -51,9 +51,3 @@ Template.main.helpers({
 });
 
 
-            {
-                title: "",
-                author: "",
-                url: "",
-                votes: ""            
-			},
