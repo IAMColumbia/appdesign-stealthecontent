@@ -1,4 +1,4 @@
-Template.main.helpers({[
+[
   {
     "id": 25340271,
     "name": "ADO_Azure",
@@ -1913,4 +1913,4 @@ Template.main.helpers({[
     "watchers": 0,
     "default_branch": "master"
   }
-]})
+]
