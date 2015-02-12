@@ -3,9 +3,28 @@
 </head>
 
 <body>
-	{{> main}}
+	{{> featuredStories}}
 </body>
 
-<template name="main">
-  {{data}}
+<template name="featuredStories">
+  <div class="stories">
+  	{{#with data}}
+  		{{search}}
+
+  		{{#each featuredStories}}
+	      {{> postStory}}
+	    {{/each}}
+  	{{/with}}
+
+    
+  </div>
 </template>
+
+<template name="postStory">
+  <div class="story">
+    <div class="post-content">
+      <h3><img src="{{imageUrl}}">{{title}}<span>{{excerpt}}</span></h3>
+    </div>
+  </div>
+</template>
+

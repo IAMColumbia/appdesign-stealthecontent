@@ -1,4 +1,4 @@
-Template.main.helpers({
+Template.featuredStories.helpers({
     data: {
         search: "entertainment",
         featuredStories: [
