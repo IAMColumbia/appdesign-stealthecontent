@@ -1,7 +1,7 @@
 Template.main.helpers({
     data: {
         search: "girlfriend",
-        resultCount: 260,960,
+        resultCount: [260, 960],
         currentPageResult: [1,16],
         results: 
         [

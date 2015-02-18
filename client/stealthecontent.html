@@ -7,5 +7,33 @@
 </body>
 
 <template name="main">
-  {{data}}
+	{{#with data}}
+		<input type= "Text" value = '{{search}}'>
+		
+		{{#each resultCount}}
+			{{.}} count
+		{{/each}}
+		
+		{{#each results}}
+		<ul>
+			<li>{{title}}</li>
+			<li>{{type}}</li>
+			<li>{{productFeature}}</li>
+			<li>{{rank}}</li>
+			<li>{{peopleWhoVote}}</li>
+			<li>{{url}}</li>
+			<li>{{imgUrl}}</li>
+			<li>{{seller}}</li>
+			<li>{{price}}</li>
+			<li>{{originPrice}}	</li>
+			<li>{{prime}}</li>
+			<li>{{excerpt}}</li>
+			<li>{{startSellingDate}}</li>
+		</ul>
+		{{/each}}
+		
+	
+	
+	{{/with}}
+ 
 </template>

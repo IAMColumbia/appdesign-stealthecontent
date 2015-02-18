@@ -1,4 +1,4 @@
-Template.main.helpers({
+Template.matt.helpers({
     data: {
         search: "boring",
         dictionary: {
