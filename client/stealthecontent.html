@@ -3,9 +3,37 @@
 </head>
 
 <body>
-	{{> main}}
+    <div id="wrapper">
+	   {{> main}}
+    </div>
 </body>
 
 <template name="main">
-  {{data}}
+  {{#with data}}
+    <div class="header">
+        <h1><a href="{{headlineLink}}">{{headlineDescription}}</a></h1>
+        <div class="player"><iframe width="660" height="415" src="{{video}}" frameborder="0" allowfullscreen></iframe></div>
+    </div>
+    <br /><br />
+    <h3>Slider</h3>
+    <p style="text-align:center">There is a slideshow here I promise you (it just doesn't have the jQuery / JavaScript needed :P</p>
+    <div class="slideshow">
+        <ul class="slideshow-list">
+            {{#each slider}}
+            <li><figure><img src='{{image}}' /><figcaption><h2>{{headline}}</h2></figcaption></figure></li>
+            {{/each}}
+        </ul>
+    </div>
+    <br /><br />
+    <h3>Popular Stories</h3>
+    <div class="popular">
+        <ul class="popular-list">
+            {{#each popularStories}}
+            <li><a href="{{link}}"><figure><img src='{{image}}' /><figcaption><h2>{{description}}</h2></figcaption></figure></a></li>
+            {{/each}}
+        </ul>
+    </div>
+    <br /><br />
+    <p style="text-align:center">{{weatherLocation}} temperature is {{weatherTemperature}}</p>
+    {{/with}}
 </template>
